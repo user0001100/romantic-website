@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff0f5" />
+  <title>Our Little Universe 💗</title>
+  <link rel="stylesheet" href="./css/base.css" />
+  <link rel="stylesheet" href="./css/chat.css" />
+  <script type="module" src="./js/main.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand-icon">♡</div>
+      <div>
+        <h1>Our Little Universe</h1>
+        <p class="subtitle">A little place for lovely conversations</p>
+      </div>
+      <span class="online-dot" title="Chat ready"></span>
+    </header>
+
+    <section class="welcome">
+      <div class="heart-art">💗</div>
+      <h2>Hey you, welcome home!</h2>
+      <p>Every little conversation can make a lovely memory.</p>
+    </section>
+
+    <section class="chat-card" aria-label="Romantic chatbot">
+      <div class="chat-heading">
+        <div>
+          <h2>Our Chat 💌</h2>
+          <p>Talk about your day, your dreams, or anything.</p>
+        </div>
+        <button id="clear-chat" class="clear-button" type="button">
+          Clear chat
+        </button>
+      </div>
+
+      <div
+        id="messages"
+        class="messages"
+        role="log"
+        aria-live="polite"
+        aria-label="Chat messages"
+      ></div>
+
+      <form id="chat-form" class="chat-form">
+        <label class="sr-only" for="message-input">Your message</label>
+        <input
+          id="message-input"
+          type="text"
+          placeholder="Type something sweet..."
+          maxlength="1000"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" id="send-button">Send ♡</button>
+      </form>
+
+      <p class="privacy-note">
+        🔒 This browser stores your chat on this device.
+      </p>
+    </section>
+
+    <footer>
+      Made with a little love and lots of heart ♡
+    </footer>
+  </main>
+</body>
+</html>
